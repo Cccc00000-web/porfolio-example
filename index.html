@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人作品集</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper {
+            max-width: 900px;
+            width: 100%;
+        }
+        header {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+            color: var(--accent);
+        }
+        p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .section-title {
+            font-size: 20px;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+        }
+        /* 作品展示網格空間 */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+        .project-img-placeholder {
+            width: 100%;
+            height: 140px;
+            background: linear-gradient(135deg, #334155, #475569);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: var(--text-main);
+        }
+        .tag {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 6px;
+            margin-bottom: 10px;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 個人介紹區 -->
+        <header>
+            <h1>Hi, 我是陳亭妤</h1>
+            <p>大一新鮮人，熱愛設計與程式開發。這是我的個人作品集展示空間，未來會在這裡放上更多精彩專案！</p>
+        </header>
+
+        <!-- 作品集展示空間 -->
+        <h2 class="section-title">我的作品集空間 (Portfolio)</h2>
+        <div class="portfolio-grid">
+            <!-- 作品卡片 1 -->
+            <div class="project-card">
+                <div class="project-img-placeholder">專案預覽圖 1</div>
+                <h3 class="project-title">期初網頁設計練習</h3>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">UI Layout</span>
+                <p>使用純 HTML 與 CSS 打造的第一個RWD響應式網頁雛形。</p>
+                <a href="#" class="project-link">了解更多 &rarr;</a>
+            </div>
+
+            <!-- 作品卡片 2 -->
+            <div class="project-card">
+                <div class="project-img-placeholder">專案預覽圖 2</div>
+                <h3 class="project-title">創意介面雛形</h3>
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <p>探索使用者體驗與現代化介面排版的視覺設計練習。</p>
+                <a href="#" class="project-link">了解更多 &rarr;</a>
+            </div>
+
+            <!-- 作品卡片 3 -->
+            <div class="project-card">
+                <div class="project-img-placeholder">專案預覽圖 3</div>
+                <h3 class="project-title">未來待上傳專案</h3>
+                <span class="tag">Coming Soon</span>
+                <p>準備放上更多大學期間所累積的程式與設計專案作品。</p>
+                <a href="#" class="project-link">敬請期待 &rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
