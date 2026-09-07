@@ -1,4 +1,4 @@
-# 📂 個人作品集網站 (Portfolio Example)
+# 📂 陳亭妤-個人作品集網站 (Portfolio Example)
 
 這是我的個人作品集網頁設計專案，主要用於展示個人簡介、技能專長以及過去的專案成果。本網站已透過 GitHub Pages 成功架設並上線。
 
