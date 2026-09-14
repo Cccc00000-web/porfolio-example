@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數位科技概論作業詳情</title>
+    <style>
+        :root {
+            --bg-color: #999999;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper {
+            max-width: 800px;
+            width: 100%;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--text-main);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .detail-card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        .section-header {
+            font-size: 16px;
+            color: var(--accent);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .task-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .task-title {
+            font-weight: bold;
+        }
+        .task-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .btn-view {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid var(--accent);
+            padding: 4px 12px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+        .btn-view:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="index.html" class="back-link">&larr; 返回作品集首頁</a>
+        <div class="detail-card">
+            <h1>數位科技概論課程作業</h1>
+            <p>本頁面記錄上課進行的 HTML、CSS 語法練習與各項單元作業。</p>
+            
+            <div class="section-header">HTML 基礎練習</div>
+            <ul class="task-list">
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 01：文字層級與結構</div>
+                        <div class="task-desc">練習 h1-h3 語意化標籤、段落與文字風格標記 (sub, sup, b, i)</div>
+                    </div>
+                    <a href="materials/01-text/01-html-text.html" class="btn-view">檢視作業</a>
+                </li>
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 02：多媒體元件嵌入</div>
+                        <div class="task-desc">整合 PNG/SVG 圖片、WAV 音訊與 MP4 影片播放器控制條</div>
+                    </div>
+                    <a href="materials/02-media/02-html-media.html" class="btn-view">檢視作業</a>
+                </li>
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 03：清單與表格應用</div>
+                        <div class="task-desc">使用 ul 無序清單、ol 有序步驟清單以及 table 結構化表格</div>
+                    </div>
+                    <a href="materials/03-plan/03-html-plan.html" class="btn-view">檢視作業</a>
+                </li>
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 04：互動表單設計</div>
+                        <div class="task-desc">實作單行文字、單選 (radio)、複選 (checkbox) 與下拉選單元件</div>
+                    </div>
+                    <a href="materials/04-form/04-html-form.html" class="btn-view">檢視作業</a>
+                </li>
+            </ul>
+
+            <div class="section-header">CSS 樣式與排版練習</div>
+            <ul class="task-list">
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 05：視覺風格與配色</div>
+                        <div class="task-desc">運用 CSS 屬性控制字型大小、留白 (padding/margin) 與 HEX 色彩</div>
+                    </div>
+                    <a href="materials/05-style/05-css-style.html" class="btn-view">檢視作業</a>
+                </li>
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 06：整頁版型設計</div>
+                        <div class="task-desc">使用 CSS Grid (fr, minmax) 靈活調整單欄、雙欄與多欄佈局</div>
+                    </div>
+                    <a href="materials/06-layout/06-css-layout.html" class="btn-view">檢視作業</a>
+                </li>
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 07：卡片排列與對齊</div>
+                        <div class="task-desc">透過 Flexbox 進行多卡片對齊，並用 object-fit 控制圖片裁切</div>
+                    </div>
+                    <a href="materials/07-cards/07-css-cards.html" class="btn-view">檢視作業</a>
+                </li>
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 08：RWD 響應式網頁</div>
+                        <div class="task-desc">運用 @media 媒體查詢與 max-width 讓頁面隨裝置寬度縮放</div>
+                    </div>
+                    <a href="materials/08-rwd/08-css-rwd.html" class="btn-view">檢視作業</a>
+                </li>
+                <li class="task-item">
+                    <div>
+                        <div class="task-title">活動 09：無障礙網頁設計 (A11y)</div>
+                        <div class="task-desc">透過 WAVE 進行機檢，修正對比度、alt 屬性與表單標籤連動</div>
+                    </div>
+                    <a href="materials/09-accessibility/09-css-accessibility.html" class="btn-view">檢視作業</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <title>我的個人作品集</title>
     <style>
         :root {
-            --bg-color: #A5A552;
+            --bg-color: #999999;
             --card-bg: #1e293b;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
@@ -50,7 +50,6 @@
             border-left: 4px solid var(--accent);
             padding-left: 10px;
         }
-        /* 作品展示網格空間 */
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -109,16 +108,24 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- 個人介紹區 -->
         <header>
             <h1>Hi, 我是陳亭妤</h1>
-            <p>大一新鮮人，熱愛設計與程式開發。這是我的個人作品集展示空間，未來會在這裡放上更多精彩專案！</p>
+            <p>大一新鮮肝，熱愛設計與程式開發。這是我的個人作品集展示空間，未來會在這裡放上更多精彩專案！</p>
         </header>
 
-        <!-- 作品集展示空間 -->
         <h2 class="section-title">我的作品集空間 (Portfolio)</h2>
         <div class="portfolio-grid">
-            <!-- 作品卡片 1 -->
+            <!-- 新增：數位科技概論作業卡片 -->
+            <div class="project-card">
+                <div class="project-img-placeholder">數位科技專案</div>
+                <h3 class="project-title">數位科技概論作業</h3>
+                <span class="tag">Coursework</span>
+                <span class="tag">HTML/CSS</span>
+                <p>收錄課堂實作活動 01-09 的練習成果與學習紀錄。</p>
+                <a href="digital-tech.html" class="project-link">檢視細部內容 &rarr;</a>
+            </div>
+
+            <!-- 原有作品卡片 1 -->
             <div class="project-card">
                 <div class="project-img-placeholder">專案預覽圖 1</div>
                 <h3 class="project-title">期初網頁設計練習</h3>
@@ -128,7 +135,7 @@
                 <a href="#" class="project-link">了解更多 &rarr;</a>
             </div>
 
-            <!-- 作品卡片 2 -->
+            <!-- 原有作品卡片 2 -->
             <div class="project-card">
                 <div class="project-img-placeholder">專案預覽圖 2</div>
                 <h3 class="project-title">創意介面雛形</h3>
@@ -138,7 +145,7 @@
                 <a href="#" class="project-link">了解更多 &rarr;</a>
             </div>
 
-            <!-- 作品卡片 3 -->
+            <!-- 原有作品卡片 3 -->
             <div class="project-card">
                 <div class="project-img-placeholder">專案預覽圖 3</div>
                 <h3 class="project-title">未來待上傳專案</h3>
