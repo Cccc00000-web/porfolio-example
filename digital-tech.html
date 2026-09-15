@@ -72,6 +72,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 15px;
         }
         .task-title {
             font-weight: bold;
@@ -81,14 +82,20 @@
             color: var(--text-muted);
             margin-top: 4px;
         }
+        .btn-group {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+        }
         .btn-view {
             color: var(--accent);
             text-decoration: none;
             font-size: 14px;
             border: 1px solid var(--accent);
-            padding: 4px 12px;
+            padding: 6px 12px;
             border-radius: 6px;
             white-space: nowrap;
+            transition: background 0.2s;
         }
         .btn-view:hover {
             background: rgba(56, 189, 248, 0.1);
@@ -109,7 +116,10 @@
                         <div class="task-title">活動 01：文字層級與結構</div>
                         <div class="task-desc">練習 h1-h3 語意化標籤、段落與文字風格標記 (sub, sup, b, i)</div>
                     </div>
-                    <a href="materials/01-text/01-html-text.html" class="btn-view">檢視作業</a>
+                    <div class="btn-group">
+                        <a href="01-html-text-1151702.1.html" class="btn-view" target="_blank">作業 1 (學習小站)</a>
+                        <a href="01-html-text-11517002.2.html" class="btn-view" target="_blank">作業 2 (科學探索日)</a>
+                    </div>
                 </li>
                 <li class="task-item">
                     <div>
