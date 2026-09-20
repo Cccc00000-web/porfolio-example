@@ -101,6 +101,36 @@
         .btn-view:hover {
             background: rgba(56, 189, 248, 0.1);
         }
+
+        /* 修改心得與觀察報告樣式 */
+        .report-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .report-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .report-item {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .report-label {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        .code-snippet {
+            background: #0f172a;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #38bdf8;
+        }
     </style>
 </head>
 <body>
@@ -168,37 +198,61 @@
                         <div class="task-title">活動 05：視覺風格與配色</div>
                         <div class="task-desc">運用 CSS 屬性控制字型大小、留白 (padding/margin) 與 HEX 色彩</div>
                     </div>
-                    <a href="materials/05-style/05-css-style.html" class="btn-view">檢視作業</a>
+                    <a href="materials/05-style/05-css-style.html" class="btn-view" target="_blank">檢視作業</a>
                 </li>
                 <li class="task-item">
                     <div>
                         <div class="task-title">活動 06：整頁版型設計</div>
                         <div class="task-desc">使用 CSS Grid (fr, minmax) 靈活調整單欄、雙欄與多欄佈局</div>
                     </div>
-                    <a href="materials/06-layout/06-css-layout.html" class="btn-view">檢視作業</a>
+                    <a href="materials/06-layout/06-css-layout.html" class="btn-view" target="_blank">檢視作業</a>
                 </li>
                 <li class="task-item">
                     <div>
                         <div class="task-title">活動 07：卡片排列與對齊</div>
                         <div class="task-desc">透過 Flexbox 進行多卡片對齊，並用 object-fit 控制圖片裁切</div>
                     </div>
-                    <a href="materials/07-cards/07-css-cards.html" class="btn-view">檢視作業</a>
+                    <a href="materials/07-cards/07-css-cards.html" class="btn-view" target="_blank">檢視作業</a>
                 </li>
                 <li class="task-item">
                     <div>
                         <div class="task-title">活動 08：RWD 響應式網頁</div>
                         <div class="task-desc">運用 @media 媒體查詢與 max-width 讓頁面隨裝置寬度縮放</div>
                     </div>
-                    <a href="materials/08-rwd/08-css-rwd.html" class="btn-view">檢視作業</a>
+                    <a href="materials/08-rwd/08-css-rwd.html" class="btn-view" target="_blank">檢視作業</a>
                 </li>
                 <li class="task-item">
                     <div>
                         <div class="task-title">活動 09：無障礙網頁設計 (A11y)</div>
                         <div class="task-desc">透過 WAVE 進行機檢，修正對比度、alt 屬性與表單標籤連動</div>
                     </div>
-                    <a href="materials/09-accessibility/09-css-accessibility.html" class="btn-view">檢視作業</a>
+                    <a href="09-css-accessibility.html" class="btn-view" target="_blank">檢視作業</a>
                 </li>
             </ul>
+
+            <!-- 新增：活動觀察與修改說明紀錄 -->
+            <div class="section-header">CSS 修改心得與實作觀察紀錄</div>
+            <div class="report-box">
+                <div class="report-grid">
+                    <div class="report-item">
+                        <span class="report-label">選擇微調的活動：</span>活動 05 (視覺風格與配色)[cite: 12]
+                    </div>
+                    <div class="report-item">
+                        <span class="report-label">原始問題與改善目標：</span>想改善週末故事創作社框框裡的內文，讓句子斷在剛好的地方，使視覺上看著更順暢[cite: 12]。
+                    </div>
+                    <div class="report-item">
+                        <span class="report-label">具體修改程式碼：</span><br>
+                        親手修改了 <span class="code-snippet">.card p { font-size: 19px; line-height: 1.8; }</span> 這行，發現使用 19px 時，字的大小剛好在句點換下一行[cite: 12]。
+                    </div>
+                    <div class="report-item">
+                        <span class="report-label">完成的修改內容：</span>網頁背景顏色改為淡黃色 (<span class="code-snippet">#ECDCBB</span>)、大標題及內文調整為深咖啡色、中標題調整為紫色[cite: 12]。
+                    </div>
+                    <div class="report-item">
+                        <span class="report-label">測試與驗證方式：</span>在記事本中修改完成後存檔，切換至瀏覽器按重新整理觀看畫面改變結果[cite: 12]。
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
