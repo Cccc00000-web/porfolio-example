@@ -102,21 +102,27 @@
             background: rgba(56, 189, 248, 0.1);
         }
 
+        /* 觀察心得樣式 */
         .obs-box {
             background: rgba(255, 255, 255, 0.02);
             border-left: 3px solid var(--accent);
-            padding: 8px 12px;
-            margin-top: 8px;
-            border-radius: 0 6px 6px 0;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
             font-size: 13px;
+        }
+        .obs-title {
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 6px;
         }
         .obs-text {
             color: var(--text-muted);
-            line-height: 1.5;
+            line-height: 1.6;
             white-space: pre-wrap;
         }
 
-        /* 修改說明紀錄 - 仿圖片樣式 */
+        /* 整合區塊容器 (仿圖片樣式) */
         .report-box {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--border-color);
@@ -128,7 +134,7 @@
         .report-grid {
             display: flex;
             flex-direction: column;
-            gap: 16px; /* 段落間距離 */
+            gap: 16px;
         }
         .report-item {
             font-size: 14px;
@@ -138,10 +144,9 @@
         .report-label {
             color: var(--accent);
             font-weight: bold;
-            display: inline; /* 讓標題與文字在同一行 */
+            display: inline;
             margin-right: 4px;
         }
-        /* 黑底程式碼高亮區塊 */
         .report-item code {
             background-color: #0f172a;
             color: #38bdf8;
@@ -212,83 +217,22 @@
                 </li>
             </ul>
 
-            <div class="section-header">CSS 樣式與排版練習</div>
-            <ul class="task-list">
-                <!-- 活動 05 -->
-                <li style="margin-bottom: 15px;">
-                    <div class="task-item" style="margin-bottom: 0;">
-                        <div>
-                            <div class="task-title">活動 05：視覺風格與配色</div>
-                            <div class="task-desc">運用 CSS 屬性控制字型大小、留白 (padding/margin) 與 HEX 色彩</div>
-                        </div>
-                        <a href="materials/05-style/05-css-style.html" class="btn-view" target="_blank">檢視作業</a>
-                    </div>
-                    <div class="obs-box">
-                        <div class="obs-text">活動05觀察:我把background色碼改為#ECDCBB，所以網頁頁面背景顏色變為淡黃色</div>
-                    </div>
-                </li>
-
-                <!-- 活動 06 -->
-                <li style="margin-bottom: 15px;">
-                    <div class="task-item" style="margin-bottom: 0;">
-                        <div>
-                            <div class="task-title">活動 06：整頁版型設計</div>
-                            <div class="task-desc">使用 CSS Grid (fr, minmax) 靈活調整單欄、雙欄與多欄佈局</div>
-                        </div>
-                        <a href="materials/06-layout/06-css-layout.html" class="btn-view" target="_blank">檢視作業</a>
-                    </div>
-                    <div class="obs-box">
-                        <div class="obs-text">活動06觀察:我選c版型，因為希望讀者先了解網站分別有什麼資訊後再依照個人需求選擇閱讀地方</div>
-                    </div>
-                </li>
-
-                <!-- 活動 07 -->
-                <li style="margin-bottom: 15px;">
-                    <div class="task-item" style="margin-bottom: 0;">
-                        <div>
-                            <div class="task-title">活動 07：卡片排列與對齊</div>
-                            <div class="task-desc">透過 Flexbox 進行多卡片對齊，並用 object-fit 控制圖片裁切</div>
-                        </div>
-                        <a href="materials/07-cards/07-css-cards.html" class="btn-view" target="_blank">檢視作業</a>
-                    </div>
-                    <div class="obs-box">
-                        <div class="obs-text">活動07觀察:我選擇cover，因為把畫面塞滿看起來比較舒服</div>
-                    </div>
-                </li>
-
-                <!-- 活動 08 -->
-                <li style="margin-bottom: 15px;">
-                    <div class="task-item" style="margin-bottom: 0;">
-                        <div>
-                            <div class="task-title">活動 08：RWD 響應式網頁</div>
-                            <div class="task-desc">運用 @media 媒體查詢與 max-width 讓頁面隨裝置寬度縮放</div>
-                        </div>
-                        <a href="materials/08-rwd/08-css-rwd.html" class="btn-view" target="_blank">檢視作業</a>
-                    </div>
-                    <div class="obs-box">
-                        <div class="obs-text">活動08觀察 :在窄視窗看到內容被畫面裁掉了，修正後內容會隨著畫面大小跟著調整空間，不管怎麼變動畫面長寬，網站內容永遠完整呈現出來</div>
-                    </div>
-                </li>
-
-                <!-- 活動 09 -->
-                <li style="margin-bottom: 15px;">
-                    <div class="task-item" style="margin-bottom: 0;">
-                        <div>
-                            <div class="task-title">活動 09：無障礙網頁設計 (A11y)</div>
-                            <div class="task-desc">透過 WAVE 進行機檢，修正對比度、alt 屬性與表單標籤連動</div>
-                        </div>
-                        <a href="09-css-accessibility.html" class="btn-view" target="_blank">檢視作業</a>
-                    </div>
-                    <div class="obs-box">
-                        <div class="obs-text">活動09觀察:</div>
-                    </div>
-                </li>
-            </ul>
-
-            <!-- CSS 修改心得與實作觀察紀錄 -->
+            <!-- CSS 綜合區塊：1.觀察紀錄 -> 2.修改心得 -> 3.作業檢視 -->
             <div class="section-header">CSS 修改心得與實作觀察紀錄</div>
+            
             <div class="report-box">
-                <div class="report-grid">
+                <!-- 1. 各活動實作觀察紀錄 -->
+                <div class="obs-box">
+                    <div class="obs-title">各活動實作觀察紀錄：</div>
+                    <div class="obs-text">【活動 05】我把 background 色碼改為 #ECDCBB，所以網頁頁面背景顏色變為淡黃色。</div>
+                    <div class="obs-text" style="margin-top: 6px;">【活動 06】我選 c 版型，因為希望讀者先了解網站分別有什麼資訊後再依照個人需求選擇閱讀地方。</div>
+                    <div class="obs-text" style="margin-top: 6px;">【活動 07】我選擇 cover，因為把畫面塞滿看起來比較舒服。</div>
+                    <div class="obs-text" style="margin-top: 6px;">【活動 08】在窄視窗看到內容被畫面裁掉了，修正後內容會隨著畫面大小跟著調整空間，不管怎麼變動畫面長寬，網站內容永遠完整呈現出來。</div>
+                    <div class="obs-text" style="margin-top: 6px;">【活動 09】</div>
+                </div>
+
+                <!-- 2. 詳細微調心得與驗證紀錄 -->
+                <div class="report-grid" style="margin-bottom: 20px;">
                     <div class="report-item">
                         <span class="report-label">選擇微調的活動：</span>活動 05 (視覺風格與配色)
                     </div>
@@ -304,6 +248,15 @@
                     <div class="report-item">
                         <span class="report-label">測試與驗證方式：</span>在記事本中修改完成後存檔，切換至瀏覽器按重新整理觀看畫面改變結果。
                     </div>
+                </div>
+
+                <!-- 3. 活動 05 作業連結 -->
+                <div class="task-item" style="margin-bottom: 0;">
+                    <div>
+                        <div class="task-title">活動 05：視覺風格與配色</div>
+                        <div class="task-desc">運用 CSS 屬性控制字型大小、留白 (padding/margin) 與 HEX 色彩</div>
+                    </div>
+                    <a href="05-css-style.html" class="btn-view" target="_blank">檢視作業 05</a>
                 </div>
             </div>
 
